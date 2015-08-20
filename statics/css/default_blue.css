@@ -27,7 +27,7 @@ body fieldset legend{padding:3px 8px;font-weight:700;}
 body fieldset.blue{border:1px solid #dce3ed}
 body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; background:none; border:none}
 
-.pop{width: 1000px; margin: 0 auto; padding: 0;background-color:#FFF}
+.pop{max-width: 1000px; margin: 0 auto; padding: 0;background-color:#FFF}
 
 /* 通用按钮 */
 .btn{ padding-left:6px}
@@ -37,7 +37,8 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .submit,.submit input{ background: url(../images/member/but.png) no-repeat; height:29px;width:auto;_width:0;overflow:visible !ie}
 .submit input{background-position: right top; border:none; padding:0 10px 0 7px; font-size:14px}
 /* 页面宽度 （更改页面宽度后，需要更改�1�7�images/v9/body-bg.png”图片的宽度＄1�7 */
-.header,.main,.footer{width:960px;margin:0 auto;}
+.header{width:100%;}
+.main{width:98%;margin:0 auto;}
 /* 头部 */
 .header{padding:10px 7px;background:none}
 .header .logo{float:left;background-position: right -10px;background-repeat: no-repeat; padding:0 20px 0 10px; height:70px; text-align:center;*font-size:40px;}
@@ -65,7 +66,7 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .header .subnav span{ padding:0 3px; color:#c8d8e9;}
 /* main style */
 .main{}
-.main .col-left{width:700px; margin-right:10px}
+.main .col-left{max-width:700px; margin-right:10px}
 .news-hot{float:left; width:310px; margin-right:9px; height:auto}
 .main .col-left .slide{overflow:hidden;_float:left;zoom:1}
 
@@ -255,7 +256,7 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 #Article .related h5{padding-bottom:4px}
 #Article .related{ padding:10px 0 0}
 #Article .related a{ color:#0b3b8c}
-.Article-Tool{ border:1px solid #dda779; position:relative; top:-1px; text-align:right; padding:8px; vertical-align:middle; height:15px; background-color:#F1EDE9}
+.Article-Tool{ border:1px solid #dda779; position:relative; top:-1px; text-align:right; padding:8px; vertical-align:middle; height:33px; background-color:#F1EDE9}
 .Article-Tool a{width:16px;height:16px;line-height:16px;background: url(../images/v9/icon.png) no-repeat; margin-left:6px;}
 .Article-Tool a:hover{text-decoration: none}
 .Article-Tool a.t,.Article-Tool a.t6{background-position: left -336px; width:auto; padding-left:16px; color:#8896b1}
@@ -379,6 +380,7 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 
 
 /* footer style */
+.footer{width:100%;}
 .footer{background:url(../images/linex.png) repeat-x top left;}
 /* link */
 .footer p.info{}

@@ -1,0 +1,28 @@
+@media screen and (max-width: 960px) {
+	.ylink{display: none;}
+}
+@media screen and (max-width: 767px) {
+	.header{padding: 10px 0;}
+	.col-auto{display:none;}
+	#mood{display:none;}
+}
+
+.navbar{
+	margin-bottom: 0;
+}
+.navbar-default{
+	
+	background-color: #CA7E23;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #333;
+	font-weight: bold;
+	font-size: 14px;
+}
+.navbar-default .navbar-nav>.active>a:hover{
+	background-color: #E09F34;
+}
+
+.navbar-default navbar-brand{
+	color: #631078;
+}
