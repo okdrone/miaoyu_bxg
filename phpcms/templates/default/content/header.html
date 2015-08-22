@@ -61,7 +61,7 @@ $(function(){
           <div id="navbar" class="navbar-collapse collapse">
 			{pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
 	        	<ul class="nav navbar-nav">
-				<li class="active"><a href="{siteurl($siteid)}"><span>首页</span></a></li>
+				<li><a href="{siteurl($siteid)}"><span>首页</span></a></li>
 				{loop $data $r}
 				<li><a href="{$r[url]}"><span>{$r[catname]}</span></a></li>
 				{/loop}
