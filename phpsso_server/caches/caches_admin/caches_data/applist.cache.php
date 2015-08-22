@@ -5,7 +5,7 @@ return array (
     'appid' => '1',
     'type' => 'phpcms_v9',
     'name' => 'phpcms v9',
-    'url' => 'http://localhost/miaoyu_bxg/',
+    'url' => 'http://www.baxiangong.cn/',
     'authkey' => 'fnaziW4ffoCmADy4DdxeIr2kYnwG9kYG',
     'ip' => '',
     'apifilename' => 'api.php?op=phpsso',
