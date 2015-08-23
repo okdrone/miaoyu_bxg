@@ -43,35 +43,53 @@ $(function(){
 </div>
 <dir class="pop">
 <div class="header">
-	<div class="logo"><a href="{siteurl($siteid)}/"><img src="{IMG_PATH}v9/logo.png" style="width:240px" /></a></div>
+    <div class="logo">
+        <a href="{siteurl($siteid)}/"><img src="{IMG_PATH}v9/logo.png" style="width:240px" /></a>
+    </div>
     <div class="banner"></div>
     <div class="bk3"></div>
-	<!-- Static navbar -->
-      <nav class="navbar navbar-default"  role="navigation">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-			{pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
-	        	<ul class="nav navbar-nav">
-				<li><a href="{siteurl($siteid)}"><span>首页</span></a></li>
-				{loop $data $r}
-				<li><a href="{$r[url]}"><span>{$r[catname]}</span></a></li>
-				{/loop}
-	            </ul>
-	        {/pc}
-            <ul class="nav navbar-nav">
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-      
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+                <ul class="nav navbar-nav">
+                    <li><a href="{siteurl($siteid)}"><span>首页</span></a></li>
+                    {loop $data $r}
+                    {if $r['child'] == 1}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$r[catname]}<span class="caret"></span></a>
+                        {pc:content action="category" catid="$r[catid]" num="10" siteid="$siteid" order="listorder ASC"}
+                        <ul class="dropdown-menu">
+                            {loop $data $rr}
+                            <li><a href="{$rr[url]}"><span>{$rr[catname]}</span></a></li>
+                            {/loop}
+                        </ul>
+                        {/pc}
+                    </li>
+                    {else}
+                    <li><a href="{$r[url]}"><span>{$r[catname]}</span></a></li>
+                    {/if}
+                    {/loop}
+                </ul>
+                {/pc}
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+
 </div>
 </div>
