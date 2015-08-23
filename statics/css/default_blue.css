@@ -70,6 +70,8 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .main .col-auto{padding:0;}
 .news-hot{float:left; width:310px; margin-right:9px; height:auto}
 .main .col-left .slide{min-width: 370px;overflow:hidden;_float:left;zoom:1}
+.main .col-left .slide h4{height: 25px; line-height: 15px;}
+.main .col-left .slide p img {margin-right: 5px; margin-bottom: 2px; float: left;}
 
 /* 通用容器 */
 .box{border:1px solid #ad6d38;zoom:1; overflow:auto; padding-bottom:10px}

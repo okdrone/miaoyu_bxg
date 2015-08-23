@@ -154,6 +154,7 @@ dl.boxVideo { overflow: hidden; }
 .jctj .clr .l img{ margin-right:4px;}
 /*box*/
 .box0 { border: 1px solid #C3D4E7; }
+/*
 	.nav { background:url(../../images/vms/navbg_x.jpg) repeat-x; height: 29px; line-height: 29px; font-size:14px; overflow:hidden;}
 	.nav h5 {margin-left: 0.5em; _margin-left:0.2em;}
 	.nav .more { margin-right: 1em; float: right; }
@@ -161,7 +162,7 @@ dl.boxVideo { overflow: hidden; }
 	.nav2 h5{float:left; margin-right:20px; margin-left:0.5em;}
 	.nav2 span.tit2{ float:left;}
 	.nav2 span.tit2 a:link,.nav2 span.tit2 a:visited{color:#777;}
-	.nav2 span.more{ float:right; margin-right:1em;}
+	.nav2 span.more{ float:right; margin-right:1em;}*/
 	.tag3{ position:relative; }
 	.tag3 .col3{ margin-top:0px;}
 	.tag3 .col3 li{ margin-bottom:0px; margin-top:0px;}
