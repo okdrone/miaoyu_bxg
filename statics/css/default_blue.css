@@ -41,8 +41,8 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .main{width:98%;margin:0 auto;}
 /* 头部 */
 .header{padding:10px 7px;background:none}
-.header .logo{float:left;background-position: right -10px;background-repeat: no-repeat; padding:0 20px 0 10px; height:70px; text-align:center;*font-size:40px;}
-.header .logo a{display:table-cell;vertical-align:middle;text-align:center;*display:block; height:70px; float:left}
+.header .logo{background-position: right -10px;background-repeat: no-repeat; padding:0 20px 0 10px; height:70px; text-align:center;*font-size:40px;}
+.header .logo a{display:table-cell;vertical-align:middle;text-align:center;*display:block; float:left}
 .header .search{ float:left; width:360px;_width:auto; padding-left:20px; height:70px}
 .header .search .tab{ padding:3px 0}
 .header .search .tab span{ color:#ddd}
