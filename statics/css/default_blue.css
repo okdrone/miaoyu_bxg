@@ -83,6 +83,7 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .box h5.title-2 span.tab span{ color:#2064ae;cursor: hand;!important;cursor: pointer}
 .box a.more{ font-size:12px; font-family:"宋体"; margin-right:8px; font-weight:normal; position:absolute;top:0; *top:1px;_top:1px; right:0}
 .box .content{ padding:0 10px; overflow:auto}
+.box p {padding: 10px 20px; line-height: 25px;}
 
 /* 默认幻灯牄1�7 */
 .FocusPic{zoom:1;position:relative; overflow:hidden}
