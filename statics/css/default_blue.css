@@ -75,10 +75,10 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 
 /* 通用容器 */
 .box{border:1px solid #ad6d38;zoom:1; overflow:auto; padding-bottom:10px}
-.box h5,.box h6{background: url(../images/v9/title1.png) no-repeat 5px 5px; background-color: #FAF7F5;color:#444; height:30px; margin-bottom:10px; line-height:30px; padding-left:30px;border-bottom:1px solid #dda779; position:relative}
+.box h5,.box h6{background: url(../images/v9/title_bg.png) no-repeat 0px 0px; background-color: #FAF7F5;color:#444; height:30px; margin-bottom:10px; line-height:30px; padding-left:30px;border-bottom:1px solid #dda779; position:relative}
 .box h6{ margin-bottom:0}
-.box h5.title-1,.box h6.title-1{background-position: 5px 5px}
-.box h5.title-2,.box h6.title-2{background-position: 5px 5px}
+.box h5.title-1,.box h6.title-1{background-position: 0px 0px}
+.box h5.title-2,.box h6.title-2{background-position: 0px 0px}
 .box h5.title-2 span.tab{float:right; padding-right:6px; color:#a4bcd6}
 .box h5.title-2 span.tab span{ color:#2064ae;cursor: hand;!important;cursor: pointer}
 .box a.more{ font-size:12px; font-family:"宋体"; margin-right:8px; font-weight:normal; position:absolute;top:0; *top:1px;_top:1px; right:0}
