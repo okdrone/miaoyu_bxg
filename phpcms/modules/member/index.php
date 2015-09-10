@@ -12,7 +12,7 @@ class index extends foreground {
 
 	private $times_db;
 	
-	function __construct() {
+	function __construct() {exit;
 		parent::__construct();
 		$this->http_user_agent = $_SERVER['HTTP_USER_AGENT'];
 	}
