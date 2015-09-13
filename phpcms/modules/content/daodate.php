@@ -13,23 +13,14 @@
  * $ld = $calendar->GetLunarDate();
 
  * $dfestival = $calendar->getDaoFestival();
-
  * 
-
  * var_dump("道历:". $ld['year'] . '年');
-
  * var_dump('阳历：' . $yd['year'] . '年' . $yd['month'] . '月' . $yd['day'] . '日' . $yd['hour'] . ':' . $yd['minute'] . '周' . $yd['week']);
-
  * var_dump('农历：' . $ld['tg'] . $ld['dz'] . '年' . $ld['sx'] . '   ' . $ld['month'] . '月' . $ld['day'] . $ld['hour'] . '时');
-
  * var_dump($dfestival);
-
  * 
-
  * @author wanbo.ge<gewanbo@gmail.com> 2014-01-12
-
  *
-
  */
 
 class daoCalendar{
