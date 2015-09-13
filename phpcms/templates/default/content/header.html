@@ -25,16 +25,11 @@
 <body>
 <div class="body-top">
     <div class="content">
-    {pc:content  action="position" posid="9" order="id" num="10" cache="3600"}
-    		<div id="announ">
-                 <ul>
-                 {loop $data $k $v}
-                      <li><a href="{$v[url]}">{$v[title]}</a></li>
-                      {/loop}
-                 </ul>
-            </div>
-     {/pc}
-	 {php echo runhook('glogal_header')}
+        <div id="announ"></div>
+        <div class="login">
+            <a href="#">设为首页</a>&nbsp;
+            <a href="#">加入收藏</a>
+        </div>
     </div>
 </div>
 <dir class="pop">
