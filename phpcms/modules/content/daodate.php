@@ -64,6 +64,8 @@ class daodate{
 
 	}
 
+	public function init(){}
+
 	private function getBit($m, $n){
 		return ($m >> $n) & 1;
 	}
