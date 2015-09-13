@@ -11,7 +11,7 @@ pc_base::load_app_func('global', 'member');
 
 class content extends foreground {
 	private $times_db;
-	function __construct() {
+	function __construct() {exit;
 		parent::__construct();
 	}
 	public function publish() {
