@@ -1,17 +1,11 @@
 <?php
 
 /**
-
  * 道教日历
-
  * 
-
  * $calendar = new daoCalendar();
-
  * $yd = $calendar->GetSolarDate();
-
  * $ld = $calendar->GetLunarDate();
-
  * $dfestival = $calendar->getDaoFestival();
  * 
  * var_dump("道历:". $ld['year'] . '年');
@@ -24,14 +18,10 @@
  */
 
 class daoCalendar{
-
 	
-
 	private $calendarData = array(0x41A95,0xD4A,0xDA5,0x20B55,0x56A,0x7155B,0x25D,0x92D,0x5192B,0xA95,0xB4A,0x416AA,0xAD5,0x90AB5,0x4BA,0xA5B,0x60A57,0x52B,0xA93,0x40E95);
 
 	private $madd = array(0,31,59,90,120,151,181,212,243,273,304,334);
-
-	
 
 	private $tgString = array('甲','乙','丙','丁','戊','己','庚','辛','壬','癸');
 
@@ -44,38 +34,22 @@ class daoCalendar{
 	private $weekString = array('日','一','二','三','四','五','六');
 
 	private $sx = array('鼠','牛','虎','兔','龙','蛇','马','羊','猴','鸡','狗','猪');
-
 	
-
 	private $year = '';
-
 	private $month = '';
 
 	private $day = '';
-
 	private $hour = '';
-
 	private $minute = '';
-
 	private $week = '';
 
-	
-
 	private $cYear = '';
-
 	private $cMonth = '';
-
 	private $cDay = '';
-
 	private $cHour = '';
 
-	
-
 	public $oSolarDate = array('year'=>'', 'month'=>'', 'day'=>'', 'week'=>'', 'hour'=>'', 'minute'=>'');
-
 	public $oLunarDate = array('tg'=>'', 'dz'=>'', 'sx'=>'', 'year'=>'', 'month'=>'', 'day'=>'', 'hour'=>'');
-
-	
 
 	public function __construct(){
 
@@ -86,21 +60,13 @@ class daoCalendar{
 		$this->minute = date('i');
 		$this->week = date('w');
 
-		
-
 		$this->e2c();
 
 	}
 
-	
-
 	private function getBit($m, $n){
-
 		return ($m >> $n) & 1;
-
 	}
-
-	
 
 	private function e2c() {
 
@@ -110,17 +76,7 @@ class daoCalendar{
 
 		if ($this->year < 1900) $this->year += 1900;
 
-		$total = ($this->year - 2001) * 365
-
-		+ floor(($this->year - 2001) / 4)
-
-		+ $this->madd[$this->month - 1]
-
-		+ $this->day
-
-		- 23;
-
-		
+		$total = ($this->year - 2001) * 365 + floor(($this->year - 2001) / 4) + $this->madd[$this->month - 1] + $this->day - 23;
 
 		if ($this->year % 4 == 0 && $this->month > 1)
 
@@ -148,8 +104,6 @@ class daoCalendar{
 
 		}
 
-		
-
 		$this->cYear = 2001 + $m;
 
 		$this->cMonth = $k - $n + 1;
@@ -169,37 +123,24 @@ class daoCalendar{
 		}
 
 		$this->cHour= floor(($this->hour + 3) / 2);
-
 	}
-
-	
 
 	public function GetLunarDate() {
 
 		$this->oLunarDate['year'] = $this->cYear + 2697;
 
-		
-
 		$this->oLunarDate['tg'] = $this->tgString[($this->cYear - 4) % 10];       //年干
 		$this->oLunarDate['dz'] = $this->dzString[($this->cYear - 4) % 12];       //年支
 
-		
-
 		$this->oLunarDate['sx'] = $this->sx[($this->cYear - 4) % 12];
-
-		
 
 		if ($this->cMonth < 1) {
 
 			$this->oLunarDate['month'] = '闰' . $this->monString[-$this->cMonth - 1];
 
 		}
-
 		else
-
 			$this->oLunarDate['month'] = $this->monString[$this->cMonth - 1];
-
-		
 
 		$this->oLunarDate['day'] = ($this->cDay < 11) ? "初" : (($this->cDay < 20) ? "十" : (($this->cDay < 30) ? "廿" : "卅"));
 
@@ -207,13 +148,9 @@ class daoCalendar{
 
 			$this->oLunarDate['day'] .= $this->numString[($this->cDay - 1) % 10];
 
-		
-
 		if ($this->cHour == 13) $this->oLunarDate['hour'] = "夜";
 
 		$this->oLunarDate['hour'] .= $this->dzString[($this->cHour - 1) % 12];
-
-	
 
 		return $this->oLunarDate;
 
@@ -287,33 +224,18 @@ class daoCalendar{
 			$tmpkey = $this->cMonth .'-'. $this->cDay;
 
 			if ($tmpkey == $key) {
-
 				$festivalStr = $val;
-
 			}
-
 		}
 
-		
-
 		return $festivalStr;
-
 	}
-
 }
-
-
-
-
 
 $calendar = new daoCalendar();
 
-
-
 $yd = $calendar->GetSolarDate();
-
 $ld = $calendar->GetLunarDate();
-
 $dfestival = $calendar->getDaoFestival();
 
 
@@ -326,9 +248,6 @@ $dfestival = $calendar->getDaoFestival();
 
 // var_dump($dfestival);
 
-
-
 $dataArr = array('solar' => $yd, 'lunar' => $ld , 'daofestival' => $dfestival);
 
 echo json_encode($dataArr);
-
