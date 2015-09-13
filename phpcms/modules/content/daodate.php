@@ -80,15 +80,10 @@ class daoCalendar{
 	public function __construct(){
 
 		$this->year = date('Y');
-
 		$this->month = date('n');
-
 		$this->day = date('j');
-
 		$this->hour = date('G');
-
 		$this->minute = date('i');
-
 		$this->week = date('w');
 
 		
@@ -186,7 +181,6 @@ class daoCalendar{
 		
 
 		$this->oLunarDate['tg'] = $this->tgString[($this->cYear - 4) % 10];       //年干
-
 		$this->oLunarDate['dz'] = $this->dzString[($this->cYear - 4) % 12];       //年支
 
 		
@@ -230,15 +224,10 @@ class daoCalendar{
 	public function GetSolarDate() {
 
 		$this->oSolarDate['year'] = $this->year;
-
 		$this->oSolarDate['month'] = $this->month;
-
 		$this->oSolarDate['day'] = $this->day;
-
 		$this->oSolarDate['week'] = $this->weekString[$this->week];
-
 		$this->oSolarDate['hour'] = $this->hour;
-
 		$this->oSolarDate['minute'] = $this->minute;
 
 		return $this->oSolarDate;
