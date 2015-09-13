@@ -1,13 +1,13 @@
 <?php
-
+defined('IN_PHPCMS') or exit('No permission resources.');
 /**
  * 道教日历
  * 
- * $calendar = new daoCalendar();
+ * $calendar = new daodate();
  * $yd = $calendar->GetSolarDate();
  * $ld = $calendar->GetLunarDate();
  * $dfestival = $calendar->getDaoFestival();
- * 
+ * R
  * var_dump("道历:". $ld['year'] . '年');
  * var_dump('阳历：' . $yd['year'] . '年' . $yd['month'] . '月' . $yd['day'] . '日' . $yd['hour'] . ':' . $yd['minute'] . '周' . $yd['week']);
  * var_dump('农历：' . $ld['tg'] . $ld['dz'] . '年' . $ld['sx'] . '   ' . $ld['month'] . '月' . $ld['day'] . $ld['hour'] . '时');
@@ -17,7 +17,7 @@
  *
  */
 
-class daoCalendar{
+class daodate{
 	
 	private $calendarData = array(0x41A95,0xD4A,0xDA5,0x20B55,0x56A,0x7155B,0x25D,0x92D,0x5192B,0xA95,0xB4A,0x416AA,0xAD5,0x90AB5,0x4BA,0xA5B,0x60A57,0x52B,0xA93,0x40E95);
 
@@ -232,7 +232,7 @@ class daoCalendar{
 	}
 }
 
-$calendar = new daoCalendar();
+$calendar = new daodate();
 
 $yd = $calendar->GetSolarDate();
 $ld = $calendar->GetLunarDate();
