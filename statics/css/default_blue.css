@@ -71,7 +71,7 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .news-hot{float:left; width:310px; margin-right:9px; height:auto}
 .main .col-left .slide{min-width: 370px;overflow:hidden;_float:left;zoom:1}
 .main .col-left .slide .content li{ height: 25px; line-height: 25px; font-size: 14px;}
-.main .col-left .slide .content .list {padding-left: 20px; background: url(../images/list-dot.jpg) no-repeat left center;}
+.main .col-left .slide .content .list {padding-left: 25px; background: url(../images/list-dot.jpg) no-repeat 5px center;}
 .main .col-left .slide .content .line { height: 3px; line-height: 3px; background: url(../images/dot.jpg) repeat-x left center;}
 .main .col-left .slide h4{height: 25px; line-height: 25px; text-align: center;}
 .main .col-left .slide p {padding: 5px; text-align: left;}
