@@ -119,6 +119,22 @@
         </div>
         <div class="bk10"></div>
         <div class="box">
+        	 {pc:content  action="lists" catid="13" num="10" siteid="$siteid" order="id desc"}
+             <h5 class="title-2">玄门道语<a href="/index.php?m=content&c=index&a=lists&catid=27" class="more">更多>></a></h5>
+             <div class="content">
+                
+                <ul class="list lh24 f14">
+                   {loop $data $r}
+                     <li> <a href="{APP_PATH}index.php?m=announce&c=index&a=show&aid={$r['aid']}">{str_cut($r['title'],54)}</a></li>
+                   {/loop}
+                </ul>
+                
+            </div>
+            {/pc}
+        </div>
+        <div class="bk10"></div>
+        <!--
+        <div class="box">
             <h5 class="title-2"><span class="rt fn f12 tab SwapTab"><span class="fb">热点</span> | <span >评论</span> | <span>关注</span></span>热门排行</h5>
             <div class="tab-content">
             <ul class="content digg">
@@ -143,7 +159,7 @@
 			{/pc}
             </ul>
             </div>
-        </div><div class="bk10"></div>
+        </div><div class="bk10"></div> -->
         <div class="box">
             <h5 class="title-2">联系方式<a href="{APP_PATH}index.php?m=vote&c=index&siteid={$siteid}" class="more">更多>></a></h5>
             <div class="tab-content">
