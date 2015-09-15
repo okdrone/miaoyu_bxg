@@ -45,7 +45,7 @@
         </div>
         <div class="bk10"></div>
         {loop subcat(0,0,0,$siteid) $r}
-        {if $r[catid] != 12 && $r[catid] != 13}
+        {if $r[catid] != 12 && $r[catid] != 13 && $r[catid] != 27}
         {php $num++}
         <div class="box cat-area" {if $num%2!=0}style=" margin-right:10px"{/if}>
             <h5 class="title-1">{$r[catname]}<a href="{$r[url]}" class="more">更多>></a></h5>
