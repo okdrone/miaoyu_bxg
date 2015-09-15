@@ -18,19 +18,18 @@
         </div>
     	<div class="slide">
         	<ul class="content">
-        	{pc:content  action="position" posid="2" order="listorder DESC" num="4"}
-        	 {loop $data $r}
-                <!--<h4 class="blue"><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],48,'')}</a></h4>
-                <p>{if $n==1}<img src="{thumb($r[thumb],90,60)}" width="90" height="60"/>{str_cut($r[description],198)}{else}{str_cut($r[description],93)}{/if}</p>-->
-                {if $n==1}
+        	{pc:content  action="position" posid="18" order="listorder DESC" num="1"}
+                {loop $data $r}
                 <li><h4 class="blue"><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],48,'')}</a></h4></li>
                 <p>{str_cut($r[description],198)}</p>
                 <li class="line"></li>
-                {else}
+                {/loop}
+            {/pc}
+            {pc:content  action="position" posid="2" order="listorder DESC" num="6"}
+                {loop $data $r}
                 <li><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],48,'')}</a></li>
-                {/if}
-               {/loop}  
-             {/pc}   
+                {/loop}  
+            {/pc}
             </ul>
         </div>
         
