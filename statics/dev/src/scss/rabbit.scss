@@ -156,3 +156,9 @@ position: absolute;
 right: -6px;
 bottom: 14px
 }
+
+
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}

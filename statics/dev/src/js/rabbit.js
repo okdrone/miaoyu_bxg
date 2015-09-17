@@ -1,28 +1,6 @@
 // Elevator
 $(function() {
 	
-	// $('.nav > li.dropdown > a').hover(
-	// 	function(){
-		// 	$(this).parent().addClass('open');
-		// 	$(this).attr('aria-expanded', true);
-		// },
-		// function(){
-		// 	$(this).parent().removeClass('open');
-		// 	$(this).attr('aria-expanded', false);
-		// }
-	// );
-	
-	// $('.nav > li.dropdown.open > ul.dropdown-menu').hover(
-	// 	function(){
-	// 		$(this).parent().addClass('open');
-	// 		$(this).attr('aria-expanded', true);
-	// 	},
-	// 	function(){
-	// 		$(this).parent().removeClass('open');
-	// 		$(this).attr('aria-expanded', false);
-	// 	}
-	// );
-	
 	// $(window).scroll(function(){
 	// 	var scrolltop=$(this).scrollTop();		
 	// 	if(scrolltop>=100){		
