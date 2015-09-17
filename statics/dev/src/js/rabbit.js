@@ -14,11 +14,11 @@ $(function() {
 	
 	$(window).scroll(function(){
 		var scrolltop=$(this).scrollTop();		
-		if(scrolltop>=100){		
+		//if(scrolltop>=100){		
 			$("#elevator_item").show();
-		}else{
-			$("#elevator_item").hide();
-		}
+		//}else{
+		//	$("#elevator_item").hide();
+		//}
 	});		
 	$("#elevator").click(function(){
 		$("html,body").animate({scrollTop: 0}, 500);	
