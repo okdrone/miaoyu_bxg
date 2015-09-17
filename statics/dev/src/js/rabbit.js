@@ -1,7 +1,7 @@
 // Elevator
 $(function() {
 	
-	$('.nav > li a[data-hover="dropdown"]').hover(
+	$('.nav > li.dropdown').hover(
 		function(){
 			$(this).parent().addClass('open');
 			$(this).attr('aria-expanded', true);
@@ -12,14 +12,15 @@ $(function() {
 		}
 	);
 	
-	$(window).scroll(function(){
-		var scrolltop=$(this).scrollTop();		
-		//if(scrolltop>=100){		
-			$("#elevator_item").show();
-		//}else{
-		//	$("#elevator_item").hide();
-		//}
-	});
+	// $(window).scroll(function(){
+	// 	var scrolltop=$(this).scrollTop();		
+	// 	if(scrolltop>=100){		
+	// 		$("#elevator_item").show();
+	// 	}else{
+	// 		$("#elevator_item").hide();
+	// 	}
+	// });
+	$("#elevator_item").show();
 	$("#elevator").click(function(){
 		$("html,body").animate({scrollTop: 0}, 500);	
 	});
