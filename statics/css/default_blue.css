@@ -16,7 +16,7 @@ input.date,input.endDate{background: #fff url(../images/admin_img/input_date.png
 .body-top .login{ float:right}
 .body-top .login span{ color:#CCC}
 .body-top .login a.rss{width:32px; float:right;overflow:hidden; text-indent:-222px;background: url(../images/icon/rsso.gif) no-repeat left center; margin-left:8px}
-.body-top .content{ margin:auto; width:960px;}
+.body-top .content{ margin:auto; max-width: 980px;}
 .special-body-top{height:38px;background-position: left -104px; background-color:#fff}
 .special-body-top a.logo{background: url(../images/v9/special-show.png) no-repeat right center; padding-right:58px; float:left; display:block}
 .special-body-top .content{ padding:2px 0}
