@@ -6,9 +6,9 @@ translation save at the array:$LANG
 */
 
 //index
-$LANG['admin_site_title'] = 'PHPCMS - 后台管理中心';
+$LANG['admin_site_title'] = '后台管理中心';
 $LANG['expand_or_contract'] = '展开与收缩';
-$LANG['phpcms_title'] = 'PHPCMS内容管理系统';
+$LANG['phpcms_title'] = '内容管理系统';
 $LANG['official_site'] = '官方网站';
 $LANG['authorization'] = '授权';
 $LANG['igenus_for_postfix'] = '支持论坛';
@@ -50,14 +50,14 @@ $LANG['main_safety_log'] = '※ 您的错误日志记录超过警戒设置（{si
 $LANG['main_safety_tpledit'] = '※ 您的模版允许后台在线编辑，为避免安全问题，建议您设为不允许在线修改';
 $LANG['main_shortcut'] = '快捷方式';
 $LANG['main_sysinfo'] = '系统信息';
-$LANG['main_version'] = 'PHPCMS程序版本：';
+$LANG['main_version'] = '程序版本：';
 $LANG['main_latest_version'] = '查看最新版本';
 $LANG['main_os'] = '操作系统：';
 $LANG['main_web_server'] = '服务器软件：';
 $LANG['main_sql_version'] = 'MySQL 版本：';
 $LANG['main_upload_limit'] = '上传文件：';
 $LANG['main_copyright'] = '版权所有：';
-$LANG['main_product_team'] = 'PHPCMS系统开发团队';
+$LANG['main_product_team'] = '系统开发团队';
 $LANG['main_product_planning'] = '总 策 划：';
 $LANG['main_product_dev'] = '团队成员：';
 $LANG['main_product_ui'] = 'UI 设计：';
@@ -403,9 +403,9 @@ Sitemaps 服务旨在使用 Feed 文件 sitemap.xml 通知 Google、Yahoo! 以�
 2、更为智能的抓取 – 因为我们可以得知您网页的最新修改时间或网页的更改频率。<br>
 3、详细的报告 – 详细说明 Google 如何将网友的点击指向您的网站及 Googlebot 如何看到您的网页。<br>
 <B>互联网新闻开放协议：</B> <br>
-1、互联网新闻开放协议》是百度新闻搜索制定的搜索引擎新闻源收录标准，网站可将发布的新闻内容制作成遵循此开放协议的XML格式的网页（独立于原有的新闻发布形式）供搜索引擎索引。 PHPCMS可自动生成网站的Sitemaps，但是您还需要向google或者baidu提交Sitemaps的访问地址。<br>
+1、互联网新闻开放协议》是百度新闻搜索制定的搜索引擎新闻源收录标准，网站可将发布的新闻内容制作成遵循此开放协议的XML格式的网页（独立于原有的新闻发布形式）供搜索引擎索引。 系统可自动生成网站的Sitemaps，但是您还需要向google或者baidu提交Sitemaps的访问地址。<br>
 您的网站的Sitemaps 访问地址为：<?=APP_PATH?>sitemaps.xml<br>
-PHPCMS可自动生成网站的<<互联网新闻开放协议>>，但是您还需要向baidu提交访问地址。<br>
+系统可自动生成网站的<<互联网新闻开放协议>>，但是您还需要向baidu提交访问地址。<br>
 您的网站的Sitemaps 访问地址为：<?=APP_PATH?>baidunews.xml<br>
 更多关于Google Sitemaps的信息：https://www.google.com/webmasters/sitemaps/login?hl=zh_CN<br>
 更多关于<<互联网新闻开放协议>>的信息：http://news.baidu.com/newsop.html#kg<br>';
@@ -448,8 +448,8 @@ $LANG['input_dirname'] = '请输入目录名称';
 $LANG['enter_the_correct_catname'] = '目录名称必须为字母、数字、下划线、中划线';
 $LANG['catname_have_exists'] = '目录名称已存在';
 $LANG['follow_catname_have_exists'] =  '<br>以下栏目因目录名称已经存在，没有被添加：';
-$LANG['domain_name_format'] = '域名可为空，格式应该为http://www.phpcms.cn/';
-$LANG['domain_end_string'] = '格式应该为http://www.phpcms.cn/，请以‘/’结束';
+$LANG['domain_name_format'] = '域名可为空，格式应该为http://www.baidu.com/';
+$LANG['domain_end_string'] = '格式应该为http://www.baidu.com/，请以‘/’结束';
 $LANG['template_setting'] = '请在【模板设置】选项中设置模板';
 $LANG['catgory_basic'] = '基本选项';
 $LANG['catgory_createhtml'] = '生成HTML设置';
@@ -522,8 +522,8 @@ $LANG['release_point_configuration'] = '发布点配置';
 $LANG['template_style_configuration'] = '模板风格配置';
 $LANG['style_name'] = '风格名';
 $LANG['site_dirname_err_msg'] = '只能包括数字、字母、下划线三种类型。';
-$LANG['site_domain_ex'] = '请填写域名，格式为：http://www.phpcms.cn/';
-$LANG['site_domain_ex2'] = '格式应该为http://www.phpcms.cn/，请以‘/’结束';
+$LANG['site_domain_ex'] = '请填写域名，格式为：http://www.baidu.com/';
+$LANG['site_domain_ex2'] = '格式应该为http://www.baidu.com/，请以‘/’结束';
 $LANG['style_name_point'] = '请选择风格（至少选一个）';
 $LANG['select_at_least_1'] = '至少选择1个';
 $LANG['please_select_a_style'] = '请选择模板风格。';
@@ -668,7 +668,7 @@ $LANG['default_style'] = '默认风格';
 
 $LANG['your_server_it_may_not_have_access_to'] = '您的服务器，可能无法访问到';
 $LANG['_please_check_the_server_configuration'] = '，请检查服务器配置。';
-$LANG['phpcms_logon'] = 'phpcms 登录';
+$LANG['phpcms_logon'] = '欢迎登录';
 $LANG['please_input_your_password_the_picture_corresponding_location_6_digits'] = '请输入口令卡中图片对应位置的6位数字';
 $LANG['ht_card'] = '口令卡';
 $LANG['apply_for_a_password_card'] = '申请口令卡';
