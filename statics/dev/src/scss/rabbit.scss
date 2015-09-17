@@ -2,11 +2,11 @@
 
 
 @media screen and (max-width: 767px) {
-	.header{padding: 10px 0;}
+	.header{padding: 0px 0 10px 0;}
 	.col-auto{display:none;}
 	#mood{display:none;}
 	.pop .header .header-top{display: none;}
-	.body-top .content .login{display: none;}
+	.body-top{display: none;}
 }
 @media screen and (max-width: 960px) {
 	.ylink{display: none;}
