@@ -19,15 +19,15 @@ $(function() {
 		//}else{
 		//	$("#elevator_item").hide();
 		//}
-	});		
+	});
 	$("#elevator").click(function(){
 		$("html,body").animate({scrollTop: 0}, 500);	
-	});		
+	});
 	$(".qr").hover(function(){
 		$(".qr-popup").show();
 	},function(){
 		$(".qr-popup").hide();
-	});	
+	});
 	
 	$.ajax({
 		url: '/index.php?m=content&c=daodate',
