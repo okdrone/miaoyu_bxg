@@ -14,7 +14,7 @@ $(function() {
 	
 	$(window).scroll(function(){
 		var scrolltop=$(this).scrollTop();		
-		if(scrolltop>=0){		
+		if(scrolltop>=100){		
 			$("#elevator_item").show();
 		}else{
 			$("#elevator_item").hide();
