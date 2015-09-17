@@ -1,7 +1,7 @@
 // Elevator
 $(function() {
 	
-	$('.nav > li.dropdown').hover(
+	$('.nav > li.dropdown > a').hover(
 		function(){
 			$(this).click();
 		// 	$(this).parent().addClass('open');
