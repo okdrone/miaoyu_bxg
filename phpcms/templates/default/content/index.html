@@ -43,7 +43,7 @@
                     <div class="img-wrap">
                         <a href="{$r[url]}" title="{$r[title]}"><img src="{thumb($r[thumb],110,0)}" title="{$r[title]}" /></a>
                     </div>
-                    <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],20)}</a>
+                    <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],26)}</a>
                 </li>
                 {/loop}
             </ul>
@@ -127,6 +127,21 @@
         <div class="box">
         	 {pc:content  action="lists" catid="27" num="10" siteid="$siteid" order="id desc"}
              <h5 class="title-2">玄门道语<a href="/index.php?m=content&c=index&a=lists&catid=27" class="more">更多>></a></h5>
+             <div class="content">
+                
+                <ul class="list lh24 f14">
+                   {loop $data $r}
+                     <li> <a href="{APP_PATH}index.php?m=announce&c=index&a=show&aid={$r['aid']}">{str_cut($r['title'],54)}</a></li>
+                   {/loop}
+                </ul>
+                
+            </div>
+            {/pc}
+        </div>
+        <div class="bk10"></div>
+        <div class="box">
+        	 {pc:content  action="lists" catid="29" num="10" siteid="$siteid" order="id desc"}
+             <h5 class="title-2">湘子庙动态<a href="/index.php?m=content&c=index&a=lists&catid=29" class="more">更多>></a></h5>
              <div class="content">
                 
                 <ul class="list lh24 f14">
