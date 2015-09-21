@@ -60,7 +60,7 @@
             {loop $info $v}
                 <p>
                     <img src="{thumb($v[thumb],90,0)}" width="90" height="60"/>
-                    <strong><a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],28)}</a></strong><br />{str_cut($v['description'],100)}
+                    <strong><a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],46)}</a></strong><br />{str_cut($v['description'],100)}
                 </p>
             {/loop}
             {/pc}                
@@ -68,7 +68,7 @@
             {pc:content action="lists" catid="$r[catid]" num="5" order="id DESC" return="info"}
                 <ul class="list lh24 f14">
                 {loop $info $v}
-                    <li>·<a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],54)}</a></li>
+                    <li>·<a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],66)}</a></li>
                 {/loop}
                 </ul>
             {/pc}
