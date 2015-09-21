@@ -8,7 +8,7 @@
             	<div class="content" id="main-slide">
                     <div class="changeDiv">  
                     {loop $data $r}
-                        <a href="{$r['url']}" title="{str_cut($r['title'],30)}"><img src="{thumb($r['thumb'],310,250)}" alt="{$r['title']}" width="310" height="250" /></a>
+                        <a href="{$r['url']}" title="{str_cut($r['title'],30)}"><img src="{thumb($r['thumb'],310,220)}" alt="{$r['title']}" width="310" height="220" /></a>
                     {/loop}
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                     <li class="line"></li>
                     {/loop}
                 {/pc}
-                {pc:content  action="position" posid="2" order="listorder DESC" num="6"}
+                {pc:content  action="position" posid="2" order="listorder DESC" num="5"}
                     {loop $data $r}
                     <li class="list"><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],48,'')}</a></li>
                     {/loop}  
@@ -208,7 +208,7 @@
 </div>
 <script type="text/javascript"> 
 $(function(){
-	new slide("#main-slide","cur",310,234,1);//焦点图
+	new slide("#main-slide","cur",310,204,1);//焦点图
 	new SwapTab(".SwapTab","span",".tab-content","ul","fb");//排行TAB
 })
 </script>
