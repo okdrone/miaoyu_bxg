@@ -57,6 +57,7 @@ if(is_array($forminfos['senior'])) {
 <?php
 if(is_array($forminfos['base'])) {
  foreach($forminfos['base'] as $field=>$info) {
+	 if($field == 'groupids_view' || $field == 'voteid') continue;
 	 if($info['isomnipotent']) continue;
 	 if($info['formtype']=='omnipotent') {
 		foreach($forminfos['base'] as $_fm=>$_fm_value) {
@@ -71,7 +72,6 @@ if(is_array($forminfos['base'])) {
 		}
 	}
  ?>
-<?php var_dump($field);?>
 	<tr>
       <th width="80"><?php if($info['star']){ ?> <font color="red">*</font><?php } ?> <?php echo $info['name']?>
 	  </th>
