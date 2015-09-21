@@ -71,11 +71,12 @@ if(is_array($forminfos['base'])) {
 		}
 	}
  ?>
+	<!--
 	<tr>
       <th width="80"><?php if($info['star']){ ?> <font color="red">*</font><?php } ?> <?php echo $info['name']?>
 	  </th>
       <td><?php echo $info['form']?>  <?php echo $info['tips']?></td>
-    </tr>
+    </tr>-->
 <?php
 } }
 ?>
