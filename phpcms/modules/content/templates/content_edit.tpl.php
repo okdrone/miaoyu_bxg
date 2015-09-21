@@ -24,6 +24,7 @@ html,body{ background:#e2e9ea}
 <?php
 if(is_array($forminfos['senior'])) {
  foreach($forminfos['senior'] as $field=>$info) {
+	if($field == 'groupids_view' || $field == 'voteid') continue;
 	if($info['isomnipotent']) continue;
 	if($info['formtype']=='omnipotent') {
 		foreach($forminfos['base'] as $_fm=>$_fm_value) {
