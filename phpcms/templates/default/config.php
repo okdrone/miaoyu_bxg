@@ -23,6 +23,7 @@
       'list_picture.html' => '图片列表页',
       'message.html' => '消息提示页',
       'page.html' => '单网页',
+      'page-img.html' => '单页带图',
       'page-adapt.html' => '单页适配',
       'rss.html' => 'RSS页',
       'search.html' => '搜索',
