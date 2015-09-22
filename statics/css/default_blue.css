@@ -109,7 +109,7 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .extend .col-left{background: url(../images/v9/extend.png) no-repeat;height:36px; width:22px; color:#fff; text-align:center; padding-top:3px; font-weight:700; margin-right:6px}
 .extend .col-auto{ font-family:"宋体"; color:#CCC;; padding:4px 0 0 0; height:40px}
 .box .news-photo{padding:0 0}
-.box .news-photo li{ float:left; width:160px; margin-left: 10px; text-align:center; padding:5px 0; vertical-align:top}
+.box .news-photo li{ float:left; width: auto; margin-left: 10px; text-align:center; padding:5px 0; vertical-align:top}
 .box .news-photo li div.img-wrap{ width:100%; margin:auto; margin-bottom:5px; height:95px;}
 .box .news-photo li div.img-wrap a{ display: block; *font-size:62px;}
 /*new-hot*/
