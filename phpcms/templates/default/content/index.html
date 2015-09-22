@@ -67,7 +67,7 @@
         <div class="box cat-area">
             <h5 class="title-1">新闻热点<a href="/index.php?m=content&c=index&a=lists&catid=8" class="more">更多>></a></h5>
             <div class="content">
-            {pc:content  action="lists" catid="8" order="updatetime DESC" thumb="1" num="1" return="info"}
+            {pc:content  action="lists" catid="8" where="status=99 AND catid IN (21,22,25,29)" order="updatetime DESC" thumb="1" num="1" return="info"}
             {loop $info $v}
                 <p>
                     <img src="{thumb($v[thumb],90,0)}" width="90" height="60"/>
