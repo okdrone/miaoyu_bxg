@@ -407,3 +407,8 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .pd_b0{padding-bottom:0px;}
 /*内容摘要*/
 .summary {background-color:#FAF7F5;border: 1px solid #DCDDDD;font-size: 14px;line-height: 23px;margin: 15px 0 0;padding: 12px 5px 6px;text-align: justify;text-indent: 2em;}
+
+
+
+.siglepage h1{ text-align: center; padding: 20px 10px;}
+.siglepage .content{ line-height: 25px;}
