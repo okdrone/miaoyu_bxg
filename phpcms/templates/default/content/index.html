@@ -53,25 +53,18 @@
         <div class="box cat-area" style=" margin-right:10px">
             <h5 class="title-1">宫观介绍<a href="/index.php?m=content&c=index&a=lists&catid=8" class="more">更多>></a></h5>
             <div class="content">
-            {pc:content  action="lists" catid="8" order="updatetime DESC" thumb="1" num="1" return="info"}
-            {loop $info $v}
                 <p>
-                    <img src="{thumb($v[thumb],90,0)}" width="90" height="60"/>
-                    <strong><a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],39)}</a></strong><br />{str_cut($v['description'],100)}
+                    <img src="{IMG_PATH}/bxg01.jpg" width="90" height="60"/>
+                    西安八仙宫，又名八仙庵，是西安最大、最著名的道教观院，位于西安市东关长乐坊，始建于宋，系唐兴庆宫局部故址。八仙宫以其美丽动人的“八仙”传说而享誉海内外，被视为道教仙迹胜地，八仙是道教传说中的八位神仙，即铁拐李、汉钟离、张果老、何仙姑、蓝采和、吕洞宾、 韩湘子、曹国舅。
                 </p>
-            {/loop}
-            {/pc}                
             <div class="bk15 hr"></div>
-            {pc:content action="lists" catid="8" num="5" order="id DESC" return="info"}
-                <ul class="list lh24 f14">
-                {loop $info $v}
-                    <li>·<a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],66)}</a></li>
-                {/loop}
-                </ul>
-            {/pc}
+                <p>
+                    <img src="{IMG_PATH}/xzm.jpg" width="90" height="60"/>
+                    西安八仙宫，又名八仙庵，是西安最大、最著名的道教观院，位于西安市东关长乐坊，始建于宋，系唐兴庆宫局部故址。八仙宫以其美丽动人的“八仙”传说而享誉海内外，被视为道教仙迹胜地，八仙是道教传说中的八位神仙，即铁拐李、汉钟离、张果老、何仙姑、蓝采和、吕洞宾、 韩湘子、曹国舅。
+                </p>
             </div>
         </div>
-        <div class="box cat-area" style=" margin-right:10px">
+        <div class="box cat-area">
             <h5 class="title-1">新闻热点<a href="/index.php?m=content&c=index&a=lists&catid=8" class="more">更多>></a></h5>
             <div class="content">
             {pc:content  action="lists" catid="8" order="updatetime DESC" thumb="1" num="1" return="info"}
