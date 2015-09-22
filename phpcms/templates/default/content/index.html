@@ -36,12 +36,12 @@
         
         <div class="bk10"></div>
         <div class="box">
-            <h5>图片新闻</h5> {pc:content action="position" posid="12" thumb="1" order="listorder DESC" num="10"}
+            <h5>图片新闻</h5> {pc:content action="position" posid="12" thumb="1" order="listorder DESC" num="8"}
             <ul class="content news-photo picbig">
                 {loop $data $r}
                 <li>
                     <div class="img-wrap">
-                        <a href="{$r[url]}" title="{$r[title]}"><img src="{thumb($r[thumb],170,0)}" title="{$r[title]}" /></a>
+                        <a href="{$r[url]}" title="{$r[title]}"><img src="{thumb($r[thumb],160,0)}" title="{$r[title]}" /></a>
                     </div>
                     <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],26)}</a>
                 </li>
