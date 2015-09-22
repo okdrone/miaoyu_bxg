@@ -62,11 +62,12 @@
                     <img src="{IMG_PATH}/xzm.jpg" width="110" height="65"/>
                     西安湘子庙座落在南大街西侧，湘子庙街口高耸着颇具气势的牌楼，上书“湘子门”三个大字，和和南大街东侧的 “书院门” ...[<a href="/index.php?m=content&c=index&a=lists&catid=28">详情</a>]
                 </p>
+                <!--
             <div class="bk15 hr"></div>
                 <p>
                     <img src="{IMG_PATH}/zcjj.jpg" width="110" height="65"/>
                     胡诚林，男，汉族，1974年2月出生，原籍陕西省山阳县人，毕业于中国道教学院，大专学历。现任中国道教协会副秘书长、陕西省道教协会会长...[<a href="/index.php?m=content&c=index&a=lists&catid=28">详情</a>]
-                </p>
+                </p>-->
             </div>
         </div>
         <div class="box cat-area">
@@ -81,7 +82,7 @@
             {/loop}
             {/pc}                
             <div class="bk15 hr"></div>
-            {pc:content action="lists" catid="8" where="status=99 AND catid IN (21,22,25,29)" num="5" order="id DESC" return="info"}
+            {pc:content action="lists" catid="8" where="status=99 AND catid IN (21,22,25,29)" num="3" order="id DESC" return="info"}
                 <ul class="list lh24 f14">
                 {loop $info $v}
                     <li>·<a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],66)}</a></li>
