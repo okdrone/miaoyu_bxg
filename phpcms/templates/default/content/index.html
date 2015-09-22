@@ -76,7 +76,7 @@
             {/loop}
             {/pc}                
             <div class="bk15 hr"></div>
-            {pc:content action="lists" catid="8" num="5" order="id DESC" return="info"}
+            {pc:content action="lists" catid="8" where="status=99 AND catid IN (21,22,25,29)" num="4" order="id DESC" return="info"}
                 <ul class="list lh24 f14">
                 {loop $info $v}
                     <li>·<a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],66)}</a></li>
