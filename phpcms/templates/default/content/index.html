@@ -77,7 +77,7 @@
             {loop $info $v}
                 <p>
                     <img src="{thumb($v[thumb],90,0)}" width="90" height="60"/>
-                    <strong><a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],39)}</a></strong><br />{str_cut($v['description'],100)}
+                    <!--<strong><a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],39)}</a></strong><br />-->{str_cut($v['description'],190)}...[<a href="{$v['url']}">详情</a>]
                 </p>
             {/loop}
             {/pc}                
@@ -102,7 +102,7 @@
             {loop $info $v}
                 <p>
                     <img src="{thumb($v[thumb],90,0)}" width="90" height="60"/>
-                    <!--<strong><a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],39)}</a></strong><br />-->{str_cut($v['description'],160)}
+                    <!--<strong><a href="{$v['url']}" target="_blank" title="{$v['title']}"{title_style($v[style])}>{str_cut($v['title'],39)}</a></strong><br />-->{str_cut($v['description'],190)}...[<a href="{$v['url']}">详情</a>]
                 </p>
             {/loop}
             {/pc}                
