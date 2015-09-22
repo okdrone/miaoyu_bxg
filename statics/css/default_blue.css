@@ -140,7 +140,7 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .list li span{font-size:12px; padding:0 6px}
 .cat-area{width:340px; float:left}
 .cat-area .content p img{ margin-right:10px; float:left}
-.cat-area .content p{color:#777; height:75px; overflow:hidden}
+.cat-area .content p{color:#777; height:70px; overflow:hidden}
 .cat-area .content p strong{ font-size:14px; color:#333}
 /* Blogroll */
 .blogroll {}

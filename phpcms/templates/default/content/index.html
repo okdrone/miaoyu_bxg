@@ -54,12 +54,12 @@
             <h5 class="title-1">宫观介绍<a href="/index.php?m=content&c=index&a=lists&catid=8" class="more">更多>></a></h5>
             <div class="content">
                 <p>
-                    <img src="{IMG_PATH}/bxg01.jpg" width="90" height="60"/>
+                    <img src="{IMG_PATH}/bxg01.jpg" width="110" height="65"/>
                     西安八仙宫，又名八仙庵，是西安最大、最著名的道教观院，位于西安市东关长乐坊，始建于宋，系唐兴庆宫局部故址。[<a href="/index.php?m=content&c=index&a=lists&catid=2">详情</a>]
                 </p>
             <div class="bk15 hr"></div>
                 <p>
-                    <img src="{IMG_PATH}/xzm.jpg" width="90" height="60"/>
+                    <img src="{IMG_PATH}/xzm.jpg" width="110" height="65"/>
                     西安湘子庙座落在南大街西侧，湘子庙街口高耸着颇具气势的牌楼，上书“湘子门”三个大字，和和南大街东侧的 “书院门” ...[<a href="/index.php?m=content&c=index&a=lists&catid=28">详情</a>]
                 </p>
             </div>
@@ -87,7 +87,7 @@
         </div>
         <div class="bk10"></div>
         {loop subcat(0,0,0,$siteid) $r}
-        {if $r[catid] != 8 && $r[catid] != 12 && $r[catid] != 13 && $r[catid] != 27}
+        {if $r[catid] != 6 && $r[catid] != 8 && $r[catid] != 12 && $r[catid] != 13 && $r[catid] != 27}
         {php $num++}
         <div class="box cat-area" {if $num%2!=0}style=" margin-right:10px"{/if}>
             <h5 class="title-1">{$r[catname]}<a href="{$r[url]}" class="more">更多>></a></h5>
