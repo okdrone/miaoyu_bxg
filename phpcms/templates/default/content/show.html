@@ -92,7 +92,7 @@
             <ul class="content rank">
 			{pc:content action="hits" catid="$catid" num="10" order="monthviews DESC" cache="3600"}
 				{loop $data $r}
-				<li><span>{number_format($r[monthviews])}</span><a href="{$r[url]}"{title_style($r[style])} class="title" title="{$r[title]}">{str_cut($r[title],56,'...')}</a></li>
+				<li><span>{number_format($r[monthviews])}</span><a href="{$r[url]}"{title_style($r[style])} class="title" title="{$r[title]}">{str_cut($r[title],51,'...')}</a></li>
 				{/loop}
 			{/pc}
             </ul>
