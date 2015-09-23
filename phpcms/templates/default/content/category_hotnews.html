@@ -59,6 +59,8 @@
   <!--<div class="bk10"></div>-->
 	<div class="col-left">
 	{php $j=1;}
+    {php var_dump($catid);}
+    {php var_dump(subcat($catid));}
     {php $catList=array_push(subcat($catid), 25, 13);var_dump($catList);}
 	{loop $catList $v}
 	{php if($v['type']!=0) continue;}
