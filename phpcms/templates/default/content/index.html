@@ -119,32 +119,6 @@
         {if $num%2==0}<div class="bk10"></div>{/if}
         {/if}
 		{/loop}
-        
-        <div class="bk10"></div>
-        <div class="box">
-            <h5>宫观掠影</h5> {pc:content action="lists" catid="9" thumb="1" order="listorder DESC" num="8"}
-            <ul class="img-slick news-photo picbig">
-                {loop $data $r}
-                <li>
-                    <div class="img-wrap">
-                        <a href="{$r[url]}" title="{$r[title]}"><img src="{thumb($r[thumb],160,0)}" title="{$r[title]}" /></a>
-                    </div>
-                    <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],32)}</a>
-                </li>
-                {/loop}
-            </ul>
-            {/pc}
-        </div>
-        <script type="text/javascript"> 
-        $(function(){
-            $('.img-slick').slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000
-            });
-        })
-        </script>
     </div>
     <div class="col-auto">
         <!--
@@ -263,6 +237,31 @@
             </div>
         </div>
     </div>
+    <div class="bk10"></div>
+    <div class="box">
+        <h5>宫观掠影</h5> {pc:content action="lists" catid="9" thumb="1" order="listorder DESC" num="8"}
+        <ul class="img-slick news-photo picbig">
+            {loop $data $r}
+            <li>
+                <div class="img-wrap">
+                    <a href="{$r[url]}" title="{$r[title]}"><img src="{thumb($r[thumb],160,0)}" title="{$r[title]}" /></a>
+                </div>
+                <a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],32)}</a>
+            </li>
+            {/loop}
+        </ul>
+        {/pc}
+    </div>
+    <script type="text/javascript"> 
+    $(function(){
+        $('.img-slick').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+    })
+    </script>
     <div class="bk10"></div>
 	
 	<div class="box blogroll ylink">
