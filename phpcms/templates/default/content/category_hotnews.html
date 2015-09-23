@@ -59,7 +59,7 @@
   <!--<div class="bk10"></div>-->
 	<div class="col-left">
 	{php $j=1;}
-    {php $catList = array_push(subcat($catid), 25, 13);}
+    {php $catList=array_push(subcat($catid), 25, 13);var_dump($catList);}
 	{loop $catList $v}
 	{php if($v['type']!=0) continue;}
         <div class="box cat-area" {if $j%2==1}style="margin-right:10px"{/if}>
