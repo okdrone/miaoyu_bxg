@@ -69,7 +69,7 @@
 				<p>
 					{loop $data $v}
 						<a href="{$v[url]}" target="_blank"><img src="{thumb($v[thumb],70,60)}" width="70" height="60"/></a>
-						<strong><a href="{$v[url]}" target="_blank" title="{$v[title]}"{title_style($v[style])}>{str_cut($v[title], 48)}</a></strong><br />{str_cut($v[description],116,'..')}
+						<strong><a href="{$v[url]}" target="_blank" title="{$v[title]}"{title_style($v[style])}>{str_cut($v[title], 48)}</a></strong><br />{str_cut($v[description],147,'..')}
 					{/loop}
 					</p>
 				{/pc}
