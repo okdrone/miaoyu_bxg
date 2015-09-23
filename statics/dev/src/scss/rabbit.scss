@@ -163,7 +163,11 @@ bottom: 14px
 	display: block;
 }*/
 
-
+/*
+Image slicker
+*/
+.img-slick{ width: 90%; margin: 0 auto; overflow: initial;}
 
 
 @import "slick.scss";
+@import "slick-theme.scss";

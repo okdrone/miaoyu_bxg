@@ -59,7 +59,8 @@
   <!--<div class="bk10"></div>-->
 	<div class="col-left">
 	{php $j=1;}
-	{loop subcat($catid) $v}
+    {php $catList=array_merge(subcat($catid), subcat(25, null, 1), subcat(13, null, 1));}
+	{loop $catList $v}
 	{php if($v['type']!=0) continue;}
         <div class="box cat-area" {if $j%2==1}style="margin-right:10px"{/if}>
         		<h5 class="title-1">{$v[catname]}<a href="{$v[url]}" class="more">更多>></a></h5>

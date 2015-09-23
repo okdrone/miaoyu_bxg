@@ -109,7 +109,7 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .extend .col-left{background: url(../images/v9/extend.png) no-repeat;height:36px; width:22px; color:#fff; text-align:center; padding-top:3px; font-weight:700; margin-right:6px}
 .extend .col-auto{ font-family:"宋体"; color:#CCC;; padding:4px 0 0 0; height:40px}
 .box .news-photo{padding:0 0}
-.box .news-photo li{ float:left; width:160px; margin-left: 10px; text-align:center; padding:5px 0; vertical-align:top}
+.box .news-photo li{ float:left; width: auto; margin-left: 10px; text-align:center; padding:5px 0; vertical-align:top}
 .box .news-photo li div.img-wrap{ width:100%; margin:auto; margin-bottom:5px; height:95px;}
 .box .news-photo li div.img-wrap a{ display: block; *font-size:62px;}
 /*new-hot*/
@@ -133,8 +133,8 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 
 /* rank */
 .rank li{background: url(../images/uline.gif) repeat-x left top; clear:both;margin-top:-1px; overflow:hidden;*height:57px;}
-.rank li span{float:left;font-family:Arial,Helvetica,sans-serif;font-size:18px;font-style:italic;height:58px;color:#1E50A2;line-height:58px;overflow:hidden;padding-right:10px;text-align:right;width:60px;background: url(../images/v9/rank.png) no-repeat right 10px;}
-.rank li a.title{padding:9px 0 0; display:block; margin-left:76px}
+.rank li span{float:left;font-family:Arial,Helvetica,sans-serif;font-size:18px;font-style:italic;height:58px;color:#1E50A2;line-height:58px;overflow:hidden;padding-right:10px;text-align:right;width:45px;background: url(../images/v9/rank.png) no-repeat right 10px;}
+.rank li a.title{padding:9px 0 0; display:block; margin-left:60px}
 /*board*/
 .list{ font-family:"宋体"; color:#888;}
 .list li span{font-size:12px; padding:0 6px}
@@ -413,3 +413,4 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 
 .siglepage h1{ text-align: center; padding: 20px 10px;}
 .siglepage .content{ line-height: 25px;}
+.siglepage .content img{max-width: 600px;}
