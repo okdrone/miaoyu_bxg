@@ -3,8 +3,8 @@
 {pc:content action="category" catid="1" num="15" siteid="$siteid" order="listorder ASC"}
 {php $tt='';}
 {loop $data $r}
-{php echo $tt;}<a href="{$r[url]}" target="_blank">{$r[catname]}</a>
-{php $tt='&nbsp;|&nbsp;';}
+{$tt}<a href="{$r[url]}" target="_blank">{$r[catname]}</a>
+{$tt='&nbsp;|&nbsp;';}
 {/loop}
 {/pc}
 <a href="{APP_PATH}index.php?m=link" target="_blank">友情链接</a>
