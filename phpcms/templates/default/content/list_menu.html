@@ -8,6 +8,8 @@
         <div class="inside">
         <ul class="content">
             {php $arrchild_arr=$CATEGORYS[$parentid]['arrchildid'];}
+            {php $arrchild_arr=explode(',',$arrchild_arr);array_shift($arrchild_arr);}
+            {php var_dump($arrchild_arr);}
             {loop $arrchild_arr $cid}
                 {$cid}
                 <li{if $catid==$cid} class="cur"{/if}><a href="{$CATEGORYS[$cid][url]}">{$CATEGORYS[$cid][catname]}</a></li>
