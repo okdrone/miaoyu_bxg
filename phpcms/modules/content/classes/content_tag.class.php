@@ -29,6 +29,45 @@ class content_tag {
 			return true;
 		}
 	}
+	
+	/**
+	 * 文章标签,没有测试
+	 * @param $data
+	 */
+	// public function story($data) {
+	// 	$id = intval($data['id']);
+	// 	$catid = intval($data['catid']);
+	// 	if(!$this->set_modelid($catid)) return false;
+	// 	if(isset($data['where'])) {
+	// 		$sql = $data['where'];
+	// 	} else {
+	// 		$thumb = intval($data['thumb']) ? " AND thumb != ''" : '';
+	// 		$sql = "status=99 AND catid='$catid' AND ID='$id'".$thumb;
+	// 	}
+
+	// 	$return = $this->db->select($sql);
+						
+		//调用副表的数据
+		// if (isset($data['moreinfo']) && intval($data['moreinfo']) == 1) {
+		// 	$ids = array();
+		// 	foreach ($return as $v) {
+		// 		if (isset($v['id']) && !empty($v['id'])) {
+		// 			$ids[] = $v['id'];
+		// 		} else {
+		// 			continue;
+		// 		}
+		// 	}
+		// 	$this->db->table_name = $this->db->table_name.'_data';
+		// 	$r = $this->db->select("`id` IN ('$id')", '*', '', '', '', 'id');
+		// 	if (!empty($r)) {
+		// 		foreach ($r as $k=>$v) {
+		// 			if (isset($return[$k])) $return[$k] = array_merge($v, $return[$k]);
+		// 		}
+		// 	}
+		// }
+	// 	return $return;
+	// }
+	
 	/**
 	 * 分页统计
 	 * @param $data
