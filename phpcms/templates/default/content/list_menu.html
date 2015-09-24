@@ -7,9 +7,9 @@
         <div class="pagenav">
         <div class="inside">
         <ul class="content">
-            {php var_dump($CATEGORYS[$parentid]['arrchildid']);}
             {php $arrchild_arr=$CATEGORYS[$parentid]['arrchildid'];}
             {loop $arrchild_arr $cid}
+                {$cid}
                 <li{if $catid==$cid} class="cur"{/if}><a href="{$CATEGORYS[$cid][url]}">{$CATEGORYS[$cid][catname]}</a></li>
             {/loop}
         </ul>
