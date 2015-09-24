@@ -20,6 +20,7 @@
       'header_page.html' => '单网页头部',
       'index.html' => '网站首页',
       'list.html' => '列表页',
+      'list_menu.html' => '列表页带左菜单',
       'list_download.html' => '下载列表页',
       'list_picture.html' => '图片列表页',
       'message.html' => '消息提示页',

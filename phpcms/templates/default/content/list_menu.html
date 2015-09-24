@@ -1,0 +1,32 @@
+{template "content","header"}
+<!--main-->
+<div class="main">
+	<div class="container">
+	<div class="row">
+    <div class="col-auto left-nav col-sm-3 col-md-3 col-lg-3">
+        <div class="pagenav">
+        <div class="inside">
+        <ul class="content">
+            {loop $arrchild_arr $cid}
+                <li{if $catid==$cid} class="cur"{/if}><a href="{$CATEGORYS[$cid][url]}">{$CATEGORYS[$cid][catname]}</a></li>
+            {/loop}
+        </ul>
+        </div>
+        </div>
+    </div>
+    <div class="col-right col-xs-12 col-sm-9 col-md-9 col-lg-9">
+    	<div class="crumbs"><a href="{siteurl($siteid)}">首页</a><span> > </span>{catpos($catid)} 列表</div>
+    	{pc:content action="lists" catid="$catid" num="25" order="id DESC" page="$page"}
+        <ul class="list lh24 f14">
+		{loop $data $r}
+			<li><span class="rt">{date('Y-m-d H:i:s',$r[inputtime])}</span>·<a href="{$r[url]}" target="_blank"{title_style($r[style])}>{$r[title]}</a></li>
+			{if $n%5==0}<li class="bk20 hr"></li>{/if}
+		{/loop}
+        </ul>
+        <div id="pages" class="text-c">{$pages}</div>
+		{/pc}
+    </div>
+    </div><!-- end row -->
+    </div>
+</div>
+{template "content","footer"}
