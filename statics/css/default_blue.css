@@ -120,8 +120,8 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .news-hot p img{ float:left; margin-right:10px}
 /* special */
 .box{ background-color:#fff}
-.box .special p{overflow:auto; margin-top:0px; padding: 10px; line-height: 20px;}
-.box .special p img{margin-right:10px; margin-bottom: 5px; float:left}
+.box .special p{overflow:auto; margin-top:0px; padding: 10px 10px 0 10px; line-height: 20px;}
+.box .special p img{margin-right:10px; float:left}
 /* Digg */
 .box .digg{background: url(../images/v9/num_list.png) no-repeat 10px 5px; padding-left:30px}
 .box .digg li{ height:24px; line-height:24px; overflow:hidden; position:relative}
