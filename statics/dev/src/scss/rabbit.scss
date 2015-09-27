@@ -3,7 +3,8 @@
 
 @media screen and (max-width: 767px) {
 	.header{padding: 0px 0 10px 0;}
-	.col-auto{display:none;}
+	/*.col-auto{display:none;}*/
+	.col-auto{float: none; clear: both;}
 	#mood{display:none;}
 	.pop .header .header-top{display: none;}
 	.body-top{display: none;}
@@ -17,6 +18,9 @@
 		margin: 0 auto;
 		clear: both;
 	}
+	.bk10{display: none}
+	.box{margin-top: 10px;}
+	#activities,#contact{ display: none;}
 }
 @media screen and (max-width: 960px) {
 	.ylink{display: none;}
