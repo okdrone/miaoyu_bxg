@@ -19,6 +19,7 @@ $(function() {
 		$(".qr-popup").hide();
 	});
 	
+	// 1111111
 	$.ajax({
 		url: '/index.php?m=content&c=daodate',
 		dataType: 'json',

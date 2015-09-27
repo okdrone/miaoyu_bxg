@@ -7,6 +7,16 @@
 	#mood{display:none;}
 	.pop .header .header-top{display: none;}
 	.body-top{display: none;}
+	.main{with: 100%}
+	.main .col-left .slide{ width: 100%}
+	.col-left{width: 100%; padding: 0; float: none; clear: both;}
+	.cat-area{width: 100%;}
+	
+	.news-hot{
+		float: none;
+		margin: 0 auto;
+		clear: both;
+	}
 }
 @media screen and (max-width: 960px) {
 	.ylink{display: none;}
@@ -14,6 +24,8 @@
 
 @media screen and (min-width: 768px) {
 	.pop .main .container{width:100%; margin:0;}
+	.main .col-left .slide{min-width: 370px;}
+	.col-left{max-width: 700px; padding: 0 10px 0 0; float: left;}
 }
 @media screen and (min-width: 1200px) {
 	.pop .main .container{width: 980px;}
