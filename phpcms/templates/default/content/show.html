@@ -146,8 +146,9 @@ $(function(){
 	// 222222
 	if($(window).width() < 600){
 		$('#Article .content img').attr('style','width: 90%; height: auto;');
+	} else {
+		$('#Article .content img').LoadImage(true, 660, 660,'{IMG_PATH}s_nopic.gif');
 	}
-	$('#Article .content img').LoadImage(true, 660, 660,'{IMG_PATH}s_nopic.gif');
 	
 })
 //-->
