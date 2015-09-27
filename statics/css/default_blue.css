@@ -66,7 +66,6 @@ body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; backgro
 .header .subnav span{ padding:0 3px; color:#c8d8e9;}
 /* main style */
 .main{}
-.main .col-left{max-width:700px; padding: 0 10px 0 0;}
 .main .col-auto{padding:0;}
 .news-hot{float:left; width:310px; margin-right:9px; height:auto}
 .main .col-left .slide{overflow:hidden;_float:left;zoom:1}
