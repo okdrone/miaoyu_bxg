@@ -264,8 +264,16 @@
     </div>
     <script type="text/javascript"> 
     $(function(){
+        if($(window).width() > 768)
         $('.img-slick').slick({
             slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+        else
+        $('.img-slick').slick({
+            slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000
