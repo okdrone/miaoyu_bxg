@@ -27,6 +27,11 @@
                 {/pc}
                 {pc:content  action="position" posid="2" order="listorder DESC" num="5"}
                     {loop $data $r}
+                    <!--<li class="list"><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],72,'')}</a></li>-->
+                    {/loop}  
+                {/pc}
+                {pc:content  action="lists" catid="6" order="updatetime DESC" num="5"}
+                    {loop $data $r}
                     <li class="list"><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],72,'')}</a></li>
                     {/loop}  
                 {/pc}
