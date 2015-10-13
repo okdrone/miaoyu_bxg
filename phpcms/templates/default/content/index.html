@@ -18,21 +18,17 @@
         </div>
     	<div class="slide">
         	<ul class="content">
-                {pc:content  action="position" posid="18" order="listorder DESC" num="1"}
+                {pc:content  action="lists" catid="6" order="updatetime DESC" num="6"}
+                    {php $i=1}
                     {loop $data $r}
+                    {if $i==1}
                     <li><h4 class="blue"><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],57,'')}</a></h4></li>
                     <p>{str_cut($r[description],198)}</p>
                     <li class="line"></li>
-                    {/loop}
-                {/pc}
-                {pc:content  action="position" posid="2" order="listorder DESC" num="5"}
-                    {loop $data $r}
-                    <!--<li class="list"><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],72,'')}</a></li>-->
-                    {/loop}  
-                {/pc}
-                {pc:content  action="lists" catid="6" order="updatetime DESC" num="5"}
-                    {loop $data $r}
+                    {else}
                     <li class="list"><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],72,'')}</a></li>
+                    {/if}
+                    {php $i++}
                     {/loop}  
                 {/pc}
                 <li class="line"></li>
